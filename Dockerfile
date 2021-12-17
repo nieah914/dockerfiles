@@ -9,7 +9,7 @@ RUN ["/bin/bash", "-c", "apt-get install tzdata"]
 RUN unlink /etc/localtime
 RUN ["/bin/bash", "-c", "ln -s /usr/share/zoneinfo/Asia/Seoul /etc/localtime"]
 WORKDIR /root/src
-RUN ["/bin/bash", "-c", "git clone https://nieah914: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@github.com/nieah914/realestate_crawler.git"]
+RUN ["/bin/bash", "-c", "git clone https://nieah914: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@github.com/nieah914/realestate_crawler.git"]
 WORKDIR /root/src/realestate_crawler
 RUN ["/bin/bash", "-c", "pip install -r requirement.txt"]
 RUN ["/bin/bash", "-c", "pip uninstall -y python-telegram-bot telegram"]
